@@ -1,0 +1,74 @@
+[
+ {
+  "name": "PARKING",
+  "glyph": "arrow-up",
+  "filename": "/PARKING.g",
+  "target": "ESP",
+  "class": "btn btn-default",
+  "index": 0
+ },
+ {
+  "name": "PROBE",
+  "glyph": "screenshot",
+  "filename": "/PROBE.g",
+  "target": "ESP",
+  "class": "btn btn-warning",
+  "index": 1
+ },
+ {
+  "name": "FRONT",
+  "glyph": "arrow-down",
+  "filename": "/FRONT.g",
+  "target": "ESP",
+  "class": "btn btn-default",
+  "index": 2
+ },
+ {
+  "name": "SPINDLEENT",
+  "glyph": "fire",
+  "filename": "/SPINDLE.g",
+  "target": "ESP",
+  "class": "btn btn-warning",
+  "index": 3
+ },
+ {
+  "name": "Homing",
+  "glyph": "star",
+  "filename": "/Homing.g",
+  "target": "ESP",
+  "class": "btn btn-info",
+  "index": 4
+ },
+ {
+  "name": "ManualToolChange",
+  "glyph": "wrench",
+  "filename": "/ManualToolChange.g",
+  "target": "ESP",
+  "class": "btn btn-danger",
+  "index": 5
+ },
+ {
+  "name": "WorkZero",
+  "glyph": "record",
+  "filename": "/WorkZero.g",
+  "target": "ESP",
+  "class": "btn btn-info",
+  "index": 6
+ },
+ {
+  "name": "",
+  "glyph": "",
+  "filename": "",
+  "target": "",
+  "class": "",
+  "index": 7
+ },
+ {
+  "name": "",
+  "glyph": "",
+  "filename": "",
+  "target": "",
+  "class": "",
+  "index": 8
+ }
+]
