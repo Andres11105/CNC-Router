@@ -1,5 +1,9 @@
 # CNC Router
 
+
+![full-machine-render](photos/renders/full-machine-render.png.JPG)
+
+
 ![CNC Router](photos/main-photo.jpg)
 
 Custom DIY CNC router based on ESP32 + FluidNC, designed for PCB prototyping, wood machining, acrylic fabrication and soft metal machining.
