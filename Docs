@@ -1,1 +1,142 @@
+# Mechanical Design Philosophy
 
+The machine was developed as a long-term DIY engineering and learning project focused on CNC systems, electronics integration, firmware configuration and mechanical design.
+
+As the project was developed using limited personal resources and primarily as a hobby and educational platform, considerable effort was dedicated to optimizing manufacturing processes, material selection and component acquisition while maintaining acceptable mechanical performance.
+
+During an internship process at EAFIT University in Medellín, Colombia, conversations with the CNC laboratory machine operator provided valuable practical insight into industrial CNC machine design principles. A strong emphasis was placed on the importance of recirculating ball screws to minimize backlash and improve positional accuracy.
+
+After researching the topic further, the importance of mechanical tolerances, rigidity and backlash reduction became evident, especially within the limitations commonly present in DIY CNC developments.
+
+For this reason, 1605 recirculating ball screws were implemented on all machine axes in an effort to reduce backlash and improve motion precision.
+
+## Prototyping Strategy
+
+Multiple laser-cut MDF prototypes were manufactured during early development stages due to their significantly lower manufacturing cost and rapid fabrication time.
+
+This allowed validation of:
+
+* Structural dimensions
+* Axis positioning
+* Mechanical clearances
+* Assembly procedures
+* Motion system integration
+
+before proceeding to the fabrication of the final RH steel structural components.
+
+The MDF prototyping stage proved extremely valuable for identifying mechanical issues early while reducing material waste and manufacturing costs.
+
+## Structural Material Selection
+
+RH steel was selected as the primary structural material mainly due to budget limitations and local material accessibility.
+
+Although RH steel adds considerable weight compared to aluminum-based CNC structures, the additional mass contributes positively to vibration damping and overall rigidity.
+
+The disadvantages associated with the increased structural weight include:
+
+* Higher moving mass
+* Increased mechanical stress
+* Greater structural flexion forces
+* More demanding alignment procedures
+
+However, for this specific project, the added rigidity and lower manufacturing cost were considered acceptable trade-offs.
+
+## Workspace Optimization
+
+The machine dimensions were intentionally designed to fit within the footprint of a standard desk workspace.
+
+This decision provided several advantages:
+
+* Easier integration into small workspaces
+* Lower material consumption
+* Reduced manufacturing costs
+* Improved accessibility during assembly and maintenance
+* Better suitability for hobby and laboratory environments
+
+while still maintaining enough working area for PCB prototyping, acrylic machining and medium-sized parts.
+
+## Modular Design
+
+The machine was designed using independent mechanical modules to simplify manufacturing, assembly and future upgrades.
+
+The system is divided into:
+
+* Machine bed and transmission module
+* Gantry module
+* X-axis carriage module
+* Z-axis module
+
+This modular approach allows individual sections of the machine to be modified or redesigned without requiring a complete reconstruction of the system.
+
+## Manufacturing Process
+
+Laser cutting was used extensively during both MDF prototyping and RH steel fabrication stages.
+
+The structural steel plates were laser-cut according to CAD designs; however, some hole tolerances were affected by laser cutting clearances that were not fully considered during the design phase.
+
+As a result, certain mounting holes required the implementation of larger diameter fasteners to compensate for excessive clearance and maintain proper mechanical stability.
+
+Several structural alignment corrections also became necessary during assembly due to distortions introduced by welding processes.
+
+Machine squaring and alignment remain one of the primary areas for future improvement.
+
+## Mechanical Challenges
+
+Like many DIY CNC developments, the project presents several common engineering challenges, including:
+
+* Structural flexion caused by machine weight and machining forces
+* Mechanical alignment complexity
+* Welding-induced dimensional deviations
+* Motion system tolerances
+* Gantry squaring adjustments
+
+Despite the machine weight, vibration levels have remained relatively controlled due to the rigidity and damping effect provided by the steel structure.
+
+Backlash reduction has been significantly improved through the use of recirculating ball screws compared to lower-cost transmission alternatives.
+
+## Components and Motion System
+
+Several critical mechanical components were acquired through commercial suppliers such as AliExpress in order to reduce manufacturing complexity and improve reliability.
+
+These include:
+
+* Stepper motor mounts
+* Linear shaft supports
+* Linear shafts
+* BK/BF supports
+* Sensors
+* Stepper motors
+* Spindle system
+* Motion accessories
+
+Current linear shaft configuration:
+
+* Z-axis: 12 mm
+* X-axis: 16 mm
+* Y-axis: 20 mm
+
+The larger Y-axis shafts were selected due to the higher structural load requirements of the machine.
+
+The CNC controller interface was acquired through ELECROW, following the recommendations and hardware ecosystem proposed by Bart Dring for FluidNC systems.
+
+## Maintenance and Accessibility
+
+The motion system and linear components remain externally accessible, simplifying inspection, cleaning and lubrication procedures.
+
+Although this exposes the system to dust and debris contamination, it considerably improves maintenance accessibility and reduces servicing complexity.
+
+## Scalability and Future Upgrades
+
+One of the primary advantages of DIY CNC platforms is their scalability and adaptability.
+
+Virtually any subsystem may be upgraded or redesigned, including:
+
+* Spindle systems
+* Motor configurations
+* Drivers
+* Bearings
+* Linear systems
+* Controllers
+* Firmware interfaces
+
+However, such modifications typically introduce secondary engineering consequences requiring additional redesign, recalibration or structural reinforcement.
