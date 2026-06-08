@@ -1,41 +1,65 @@
 # Mechanical Design Philosophy
 
-The machine was developed as a long-term DIY engineering and learning project focused on CNC systems, electronics integration, firmware configuration and mechanical design.
+![Mechanical Design](../photos/mechanical-overview.jpg)
 
-As the project was developed using limited personal resources and primarily as a hobby and educational platform, considerable effort was dedicated to optimizing manufacturing processes, material selection and component acquisition while maintaining acceptable mechanical performance.
+This section documents the engineering decisions, manufacturing processes, mechanical challenges and design philosophy behind the CNC router development.
+
+The machine was developed as a long-term DIY engineering and learning project focused on CNC systems, electronics integration, firmware configuration and mechanical design.
 
 ---
 
-## Industrial Inspiration and Backlash Considerations
+## Industrial Inspiration
 
 During an internship process at EAFIT University in Medellín, Colombia, conversations with the CNC laboratory machine operator provided valuable practical insight into industrial CNC machine design principles.
 
-A strong emphasis was placed on the importance of using recirculating ball screws to minimize backlash and improve positional accuracy.
+Special emphasis was placed on the importance of:
 
-After researching the topic further, the importance of:
-
+* Recirculating ball screws
 * Mechanical tolerances
 * Structural rigidity
-* Motion precision
 * Backlash reduction
 
-became evident, especially within the limitations commonly present in DIY CNC developments.
+After researching the topic further, the importance of motion precision and tolerance management became evident, especially within the limitations commonly present in DIY CNC developments.
 
-For this reason, 1605 recirculating ball screws were implemented on all machine axes in an effort to reduce backlash and improve motion precision.
+For this reason, 1605 recirculating ball screws were implemented on all machine axes to reduce backlash and improve positional accuracy.
+
+---
+
+## Project Philosophy
+
+This CNC router was developed primarily as:
+
+* A learning platform
+* A long-term hobby project
+* An engineering experimentation platform
+* A low-cost CNC development environment
+
+Because the project was built using limited personal resources, considerable effort was dedicated to optimizing:
+
+* Material selection
+* Manufacturing methods
+* Component acquisition
+* Mechanical design
+* Scalability possibilities
 
 ---
 
 ## Prototyping Strategy
 
-Multiple laser-cut MDF prototypes were manufactured during early development stages due to their significantly lower manufacturing cost and rapid fabrication time.
+Multiple laser-cut MDF prototypes were manufactured during early development stages due to their:
 
-This approach allowed validation of:
+* Low manufacturing cost
+* Fast fabrication time
+* Easy modification process
+* Material accessibility
+
+This prototyping stage allowed validation of:
 
 * Structural dimensions
 * Axis positioning
 * Mechanical clearances
+* Motion integration
 * Assembly procedures
-* Motion system integration
 
 before proceeding to the fabrication of the final RH steel structural components.
 
@@ -45,22 +69,26 @@ The MDF prototyping stage proved extremely valuable for identifying mechanical i
 
 ## Structural Material Selection
 
-RH steel was selected as the primary structural material mainly due to budget limitations and local material accessibility.
+RH steel was selected as the primary structural material mainly due to:
 
-Although RH steel adds considerable weight compared to aluminum-based CNC structures, the additional mass contributes positively to:
+* Budget limitations
+* Local material availability
+* Manufacturing accessibility
+
+Although RH steel adds considerable weight compared to aluminum CNC structures, the additional mass contributes positively to:
 
 * Vibration damping
-* Overall rigidity
-* Structural stability
+* Structural rigidity
+* Machine stability
 
-The disadvantages associated with the increased structural weight include:
+However, the increased structural weight also introduces:
 
 * Higher moving mass
 * Increased mechanical stress
-* Greater structural flexion forces
+* Greater flexion forces
 * More demanding alignment procedures
 
-However, for this specific project, the added rigidity and lower manufacturing cost were considered acceptable trade-offs.
+For this project, the added rigidity and lower manufacturing cost were considered acceptable trade-offs.
 
 ---
 
@@ -70,51 +98,63 @@ The machine dimensions were intentionally designed to fit within the footprint o
 
 This decision provided several advantages:
 
-* Easier integration into small workspaces
-* Lower material consumption
-* Reduced manufacturing costs
-* Improved accessibility during assembly and maintenance
-* Better suitability for hobby and laboratory environments
+| Advantage              | Benefit                                      |
+| ---------------------- | -------------------------------------------- |
+| Compact Size           | Easier workspace integration                 |
+| Reduced Material Usage | Lower manufacturing costs                    |
+| Improved Accessibility | Easier assembly and maintenance              |
+| Desktop Footprint      | Better adaptation for hobby/lab environments |
 
 while still maintaining enough working area for:
 
 * PCB prototyping
+* Wood machining
 * Acrylic machining
-* Woodworking
-* Medium-sized mechanical parts
+* Soft metal experimentation
 
 ---
 
 ## Modular Design
 
-The machine was designed using independent mechanical modules to simplify manufacturing, assembly and future upgrades.
+The machine was designed using independent mechanical modules to simplify:
 
-The system is divided into:
+* Manufacturing
+* Assembly
+* Maintenance
+* Future upgrades
 
-* Machine bed and transmission module
-* Gantry module
-* X-axis carriage module
-* Z-axis module
+### Current Machine Architecture
 
-This modular approach allows individual sections of the machine to be modified or redesigned without requiring a complete reconstruction of the system.
+| Module        | Description                     |
+| ------------- | ------------------------------- |
+| Bed Module    | Base structure and transmission |
+| Gantry Module | Main bridge structure           |
+| X-Axis Module | Horizontal displacement system  |
+| Z-Axis Module | Vertical motion system          |
+
+This modular approach allows individual sections of the machine to be modified or redesigned without rebuilding the complete structure.
 
 ---
 
 ## Manufacturing Process
 
-Laser cutting was used extensively during both MDF prototyping and RH steel fabrication stages.
+Laser cutting was used extensively during both:
 
-The structural steel plates were laser-cut according to CAD designs; however, some hole tolerances were affected by laser cutting clearances that were not fully considered during the design phase.
+* MDF prototyping
+* RH steel fabrication
 
-As a result:
+The structural steel plates were laser-cut according to CAD designs; however, some hole tolerances were affected because laser cutting clearances were not fully considered during the design phase.
 
-* Some mounting holes required larger diameter fasteners
-* Additional alignment adjustments became necessary
-* Certain assemblies required on-site mechanical correction
+### Manufacturing Corrections
+
+* Some holes became oversized
+* Larger fasteners became necessary
+* Additional alignment corrections were required
+* Some assemblies required manual adjustment during installation
 
 Several structural alignment corrections also became necessary during assembly due to distortions introduced by welding processes.
 
-Machine squaring and alignment remain one of the primary areas for future improvement.
+> Machine squaring and alignment remain one of the primary areas for future improvement.
 
 ---
 
@@ -128,6 +168,15 @@ Like many DIY CNC developments, the project presents several common engineering 
 * Motion system tolerances
 * Gantry squaring adjustments
 
+### Current Mechanical Behavior
+
+| Characteristic      | Current Result               |
+| ------------------- | ---------------------------- |
+| Structural Rigidity | Acceptable                   |
+| Vibration Levels    | Relatively controlled        |
+| Backlash Reduction  | Significantly improved       |
+| Alignment Accuracy  | Requires future improvements |
+
 Despite the machine weight, vibration levels have remained relatively controlled due to the rigidity and damping effect provided by the steel structure.
 
 Backlash reduction has been significantly improved through the use of recirculating ball screws compared to lower-cost transmission alternatives.
@@ -136,9 +185,9 @@ Backlash reduction has been significantly improved through the use of recirculat
 
 ## Components and Motion System
 
-Several critical mechanical components were acquired through commercial suppliers such as AliExpress in order to reduce manufacturing complexity and improve reliability.
+Several critical mechanical components were acquired through commercial suppliers such as AliExpress to reduce manufacturing complexity and improve reliability.
 
-### Main Components
+### Main Purchased Components
 
 * Stepper motor mounts
 * Linear shaft supports
@@ -149,7 +198,9 @@ Several critical mechanical components were acquired through commercial supplier
 * Spindle system
 * Motion accessories
 
-### Linear Shaft Configuration
+---
+
+## Linear Shaft Configuration
 
 | Axis   | Diameter |
 | ------ | -------- |
@@ -159,12 +210,16 @@ Several critical mechanical components were acquired through commercial supplier
 
 The larger Y-axis shafts were selected due to the higher structural load requirements of the machine.
 
-### Motion System
+---
 
-* 1605 recirculating ball screws on all axes
-* BK/BF support system
-* Linear shaft guidance system
-* Modular transmission structure
+## Motion System
+
+| Component           | Specification                  |
+| ------------------- | ------------------------------ |
+| Ball Screws         | 1605 Recirculating Ball Screws |
+| Support System      | BK/BF Supports                 |
+| Linear System       | Hardened Steel Shafts          |
+| Controller Platform | ESP32 + FluidNC                |
 
 The CNC controller interface was acquired through ELECROW following the recommendations and hardware ecosystem proposed by Bart Dring for FluidNC systems.
 
@@ -179,7 +234,12 @@ The motion system and linear components remain externally accessible, simplifyin
 * Lubrication
 * Preventive maintenance
 
-Although this exposes the system to dust and debris contamination, it considerably improves maintenance accessibility and reduces servicing complexity.
+Although this exposes the system to dust and debris contamination, it considerably improves:
+
+* Maintenance accessibility
+* Serviceability
+* Mechanical inspection
+* Upgrade possibilities
 
 ---
 
@@ -197,4 +257,24 @@ Virtually any subsystem may be upgraded or redesigned, including:
 * Controllers
 * Firmware interfaces
 
-However, such modifications typically introduce secondary engineering consequences requiring additional redesign, recalibration or structural reinforcement.
+### Potential Upgrade Consequences
+
+| Upgrade             | Possible Required Changes |
+| ------------------- | ------------------------- |
+| Larger Spindle      | Stronger Z-axis support   |
+| Bigger Motors       | Driver replacement        |
+| Higher Speed Motion | Structural reinforcement  |
+| Heavier Components  | Motion recalibration      |
+
+These modifications typically introduce secondary engineering consequences requiring:
+
+* Additional redesign
+* Structural reinforcement
+* Motion recalibration
+* Firmware adjustments
+
+---
+
+## Development Philosophy
+
+The objective of this project is not only to build a functional CNC machine, but also to document the complete engineering process behind a real-world DIY CNC development platform.
