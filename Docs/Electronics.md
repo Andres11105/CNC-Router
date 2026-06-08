@@ -1,3 +1,5 @@
+![CNC Router](images/cnc-router-machine.jpeg)
+
 # Electronics Overview
 
 The CNC router uses an ESP32-based control system running FluidNC firmware combined with external motion control electronics and distributed power systems.
@@ -9,6 +11,8 @@ The electrical system was designed with a focus on:
 * Low-cost implementation
 * Ease of maintenance
 * Future scalability
+
+![Router Assembly Process](images/cnc-router-process.jpeg)
 
 ---
 
@@ -30,6 +34,13 @@ Current electronics used in the machine:
 | Limit Switches     | Inductive sensors              |
 
 The Y-axis motors are newer units while the X and Z axis motors were reused from previous CNC-related projects and experimentation platforms.
+
+![BLDC Spindle](images/bldc-spindle.jpg)
+![BK12 and BF12 Supports](images/BK12-BF12.jpg)
+![SCS20UU Bearings](images/scs20uu.jpg)
+![SK and SHF Supports](images/sk-shf.jpg)
+![XY Axis Support](images/xysupport.jpg) 
+![Z Axis Support](images/zsupport.jpg)
 
 ---
 
@@ -116,4 +127,13 @@ The electronics enclosure remains easily accessible for:
 * Future upgrades
 
 Further improvements such as advanced cable management, EMI reduction and enclosure refinements may be implemented in future revisions of the project.
+
+
+![Electronics Assembly Process](images/electronic-router-process.jpeg)
+![6x CNC Controller Pinout](images/6x_pinout.png)
+![Motor Wiring](images/motor_wiring.png)
+![Electronics Enclosure](images/electronics-enclosure.jpeg)
+
+
+
 
